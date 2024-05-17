@@ -1,2 +1,2 @@
-# rx72t-canbus-demo
-Send CAN messages between Renesas RX72T EVK
+# can_demo_rskrx72t
+ 
