@@ -1,0 +1,110 @@
+Renesas Optimizing Linker (W3.05.00 )             21-Nov-2023 16:44:20
+
+*** Options ***
+
+-subcommand=Linkercan_demo_rskrx72t.tmp
+-MAKEUD="C:\Users\EJJMW\e2_studio\workspace\can_demo_rskrx72t\HardwareDebug/can_demo_rskrx72t_l.ud" 
+-noprelink 
+-input=".\src/demo\can_api_demo.obj"
+-input=".\src/demo\switches.obj"
+-input=".\src/smc_gen/general\r_cg_hardware_setup.obj"
+-input=".\src/smc_gen/general\r_smc_cgc.obj"
+-input=".\src/smc_gen/general\r_smc_cgc_user.obj"
+-input=".\src/smc_gen/general\r_smc_interrupt.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rx72t\hwsetup.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\dbsct.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\lowlvl.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\lowsrc.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\mcu_locks.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_common.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_cpu.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_locking.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_mcu_startup.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_software_interrupt.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_rx_intrinsic_functions.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\resetprg.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\sbrk.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx72t\mcu_clocks.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx72t\mcu_init.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx72t\mcu_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx72t\mcu_mapped_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx72t\vecttbl.obj"
+-input=".\src/smc_gen/r_can_rx/src\r_can_rx.obj"
+-input=".\src/smc_gen/r_pincfg\Pin.obj"
+-input=".\src/smc_gen/r_pincfg\r_can_rx_pinset.obj"
+-library=".\can_demo_rskrx72t.lib"
+-start=SU,SI,B_1,R_1,B_2,R_2,B,R/04,PResetPRG,C_1,C_2,C,C$*,D*,W*,L,P/0FFF00000,EXCEPTVECT/0FFFFFF80,RESETVECT/0FFFFFFFC
+-output="can_demo_rskrx72t.abs" 
+-form=absolute 
+-nomessage 
+-vect=_undefined_interrupt_source_isr 
+-list 
+-nooptimize 
+-rom=D=R,D_1=R_1,D_2=R_2 
+-cpu=RAM=00000000-0001ffff,FIX=00080000-00083fff,FIX=00086000-00087fff,FIX=00088000-0009ffff,FIX=000a0000-000a3fff,FIX=000a6000-000bffff,FIX=000c0000-000dffff,FIX=000e0000-000fffff,ROM=00100000-00107fff,RAM=00120040-0012007f,FIX=007fb174-007fb177,FIX=007fb17c-007fb17f,FIX=007fb1e4-007fb1eb,FIX=007fe000-007fffff,RAM=00ffc000-00ffffff,ROM=fff00000-ffffffff 
+-nologo
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+SU
+                                  00000004  00001003      1000   4
+SI
+                                  00001004  00001403       400   4
+B_1
+                                  00001404  0000143b        38   1
+R_1
+                                  0000143c  0000148c        51   1
+B_2
+                                  0000148e  00001495         8   2
+R_2
+                                  00001496  00001496         0   1
+B
+                                  00001498  00001cbb       824   4
+R
+                                  00001cbc  00001f3b       280   4
+$ADDR_C_120040
+                                  00120040  00120043         4   1
+$ADDR_C_120048
+                                  00120048  0012004b         4   1
+$ADDR_C_120050
+                                  00120050  0012006f        20   1
+$ADDR_C_12007C
+                                  0012007c  0012007f         4   1
+PResetPRG
+                                  fff00000  fff0006e        6f   1
+C_1
+                                  fff0006f  fff00140        d2   1
+C_2
+                                  fff00142  fff00349       208   2
+C
+                                  fff0034c  fff0048f       144   4
+C$DSEC
+                                  fff00490  fff004b3        24   4
+C$BSEC
+                                  fff004b4  fff004cb        18   4
+C$VECT
+                                  fff004cc  fff008cb       400   4
+D
+                                  fff008cc  fff00b4b       280   4
+D_1
+                                  fff00b4c  fff00b9c        51   1
+D_2
+                                  fff00b9d  fff00b9d         0   1
+W
+                                  fff00ba0  fff00ba0         0   4
+W_1
+                                  fff00ba0  fff00bbc        1d   1
+W_2
+                                  fff00bbe  fff00bbe         0   2
+L
+                                  fff00bc0  fff00e88       2c9   4
+P
+                                  fff00e89  fff052b9      4431   1
+EXCEPTVECT
+                                  ffffff80  fffffffb        7c   4
+RESETVECT
+                                  fffffffc  ffffffff         4   4

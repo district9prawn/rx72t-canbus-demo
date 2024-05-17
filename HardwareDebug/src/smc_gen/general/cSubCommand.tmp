@@ -1,0 +1,21 @@
+-isa=rxv3
+-fpu
+-MAKEUD="C:\Users\EJJMW\e2_studio\workspace\can_demo_rskrx72t\HardwareDebug\src\smc_gen\general"
+-include="C:\Program Files (x86)\Renesas\RX\3_5_0\/include"
+-include="C:\Users\EJJMW\e2_studio\workspace\can_demo_rskrx72t\src\smc_gen\general"
+-include="C:\Users\EJJMW\e2_studio\workspace\can_demo_rskrx72t\src\smc_gen\r_pincfg"
+-include="C:\Users\EJJMW\e2_studio\workspace\can_demo_rskrx72t\src\smc_gen\r_bsp"
+-include="C:\Users\EJJMW\e2_studio\workspace\can_demo_rskrx72t\src\smc_gen\r_config"
+-include="C:\Users\EJJMW\e2_studio\workspace\can_demo_rskrx72t\src\smc_gen\r_can_rx"
+-include="C:\Users\EJJMW\e2_studio\workspace\can_demo_rskrx72t\src\smc_gen\r_can_rx\src"
+-include="C:\Users\EJJMW\e2_studio\workspace\can_demo_rskrx72t\src\smc_gen"
+-asmopt=-bank
+-lang=c99
+-utf8
+-nomessage
+-output=obj
+-obj_path="src/smc_gen/general"
+-debug
+-outcode=utf8
+-tfu=intrinsic
+-nologo

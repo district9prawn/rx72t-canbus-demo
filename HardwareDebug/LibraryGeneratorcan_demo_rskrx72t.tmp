@@ -1,0 +1,7 @@
+-MAKEUD_LBG="C:\Users\EJJMW\e2_studio\workspace\can_demo_rskrx72t\HardwareDebug\\can_demo_rskrx72t_lbg.ud" 
+-isa=rxv3 
+-fpu 
+-lang=c99 
+-head=runtime,stdio,stdlib,string,new 
+-output="can_demo_rskrx72t.lib" 
+-nologo
